@@ -1,0 +1,51 @@
+SCEGLIERE COSA GUARDARE SU NETFLIX
+Buttarsi sul divano
+Prendere il telecomando
+Accendere la tv
+Aprire NETFLIX
+Scegliere account
+    (if)Se sono solo/a 
+    TRUE (if) cerco film consigliato da amici
+        TRUE -Leggo trama
+            -Guaro trailer
+        (if) se mi convince
+            TRUE -schiaccio play
+            FALSE- guardo nella mia watchlist
+            (if) locandina interessante
+                TRUE-Leggo trama
+                    -Guaro trailer
+                    (if) se mi piace
+                        TRUE schiaccio
+                        FALSE (sono nevrotico/a=> riproduzione casuale)
+                              -ricomincia ciclo
+                    FALSE-vado nei più popolari
+                         -scelgo due film
+                         -leggo trama
+                         -guardo trailer          
+        FALSE -scelgo categoria film o serie 
+            (if serie)
+            TRUE (if) se ho una vecchia serie in sospeso
+                TRUE -schiacchio play
+                FALSE-guardo classifica dei film più votati su IMDb
+                    -scelgo due titoli
+                    -guardo trailer
+                    (if) se mi convince uno dei due 
+                        TRUE -schiaccio play
+                        FALSE-scelgo altri due titoli
+                             -guardo trailer
+                        RIPETI CICLO
+            TRUE -scelgo se continuare a guardare una serie (or) scelgo serie nuova
+                (if) -continuo una serie
+                TRUE
+              
+    FALSE ci confrontiamo con le altre persone
+        -votiamo categoria serie 
+            (if) film 
+                TRUE- categoria(commedia, horror, azione..)
+                    -scegliamo tre film
+                    -votiamo
+                    -schiacciamo play
+                FALSE-categoria(commedia, horror, azione..)
+                     -scegliamo tre film
+                     -votiamo
+                     -schiacciamo play   
